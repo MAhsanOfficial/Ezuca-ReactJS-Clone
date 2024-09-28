@@ -40,3 +40,67 @@
 .read-the-docs {
   color: #888;
 }
+
+@media (max-width: 768px) {
+  /* Tablet and small screens */
+  .container {
+    padding: 0 10px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Mobile phones */
+  .container {
+    padding: 0 5px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+  }
+}
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.card {
+  width: 30%; /* 30% width for desktops */
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; 
+    margin: 10px 0;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.container {
+  width: 100%; /* Use 100% width to fit screen */
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+  max-width: 100%;
+}
+
+.wide-section {
+  max-width: 100%;
+  width: 100vw; /* Full viewport width */
+  overflow: hidden; /* Hide any excess content */
+}
